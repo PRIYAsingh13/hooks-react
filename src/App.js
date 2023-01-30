@@ -3,21 +3,22 @@ import "./App.css";
 
 const App = () => {
   const state = useState();
-  const [count, setCount] =  useState(0)
+  const [count, setCount] = useState(0);
 
-
-  // let count = 1;
-  const Incriment = () => {
-setCount( count + 1)
-    // count++;
-    // console.log("clicked" + count++);
+  const Increment = () => {
+    setCount(count + 1);
   };
+  const Decrement = () => {
+    setCount(count - 1);
+  };
+
 
   return (
     <>
       <div>
         <h1> {count} </h1>
-        <button onClick={Incriment}> click me</button>
+        <button onClick={Increment}> Increment</button>
+        <button onClick={Decrement}> Decrement</button>
       </div>
     </>
   );

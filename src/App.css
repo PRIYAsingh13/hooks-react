@@ -21,6 +21,7 @@ button{
   color: aliceblue;
   font-size: larger;
   border-radius: 50%;
+  flex-direction: column;
 }
 button:hover{
   background-color: rgb(5, 51, 5);
